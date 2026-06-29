@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: #2f2f2f;
+    background: linear-gradient(90deg, #4dc09a 0%, #4dc09a 30%, #eee2c0 30%, #eee2c0 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-navbar {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-bottom: 4px solid #d89607;
+}
+
+.navbar-brand {
+    color: #d89607 !important;
+    font-family: "Sacramento", cursive;
+    font-size: 2.6rem;
+}
+
+.nav-link {
+    color: #2f2f2f !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #3cbea0 !important;
+}
+
+main.container {
+    max-width: 1120px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.recipe-card,
+.comment-card {
+    border: 2px solid rgba(83, 78, 58, 0.25);
+    border-radius: 8px;
+}
+
+.recipe-card img {
+    border: 12px solid #ffffff;
+}
+
+.card-title,
+.section-heading h2 {
+    color: #3cbea0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.recipe-details li {
+    margin-bottom: 0.35rem;
+}
+
+.ingredients {
+    padding-left: 1.2rem;
+}
+
+.profile {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.author {
+    color: #d89607;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.date {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.comment-text {
+    line-height: 1.6;
+}
+
+.modal-backdrop-custom {
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.author-modal {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    width: min(90%, 360px);
+    padding: 28px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.92);
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+}
+
+.author-modal h2 {
+    margin: 0 0 20px;
+    color: #4dc09a;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.close-x {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.site-footer {
+    color: #ffffff;
+    background-color: #2f2f2f;
+}
+
+@media (max-width: 767px) {
+    body {
+        background: #eee2c0;
+    }
+
+    .navbar-brand {
+        font-size: 2.2rem;
+    }
+
+    main.container {
+        border-radius: 0;
+    }
+}
